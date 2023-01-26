@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 import archiveicon from '../../assets/archiveicon.png';
@@ -8,6 +9,7 @@ import mypageicon from '../../assets/mypageicon.png';
 import savingicon_active from '../../assets/savingicon_active.png';
 
 function BottomBanner() {
+  const navigate = useNavigate();
   return (
     <BottomBannerPin>
       <BottomBannerWrapper>
@@ -18,6 +20,11 @@ function BottomBanner() {
             width: '25px',
             height: '24px',
             marginRight: '10px',
+            cursor: 'pointer',
+          }}
+          onClick={() => {
+            navigate('/');
+            window.scrollTo(0, 0);
           }}
         />
         <img
@@ -80,5 +87,4 @@ const BottomBannerWrapper = styled.div`
   display: flex;
   justify-content: space-around;
 `;
-
 export default BottomBanner;
