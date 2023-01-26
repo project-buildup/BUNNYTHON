@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.93a0497a.css",
+    "main.js": "/static/js/main.90606907.js",
+    "static/media/challenge.png": "/static/media/challenge.f723b8f6103a18d74815.png",
+    "static/media/challenge3.png": "/static/media/challenge3.1df92cdb6bfd57607eda.png",
+    "static/media/challenge2.png": "/static/media/challenge2.a1583224c310e79b4653.png",
+    "static/media/hsh.png": "/static/media/hsh.a509148cf359422169a9.png",
+    "index.html": "/index.html",
+    "main.93a0497a.css.map": "/static/css/main.93a0497a.css.map",
+    "main.90606907.js.map": "/static/js/main.90606907.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93a0497a.css",
+    "static/js/main.90606907.js"
+  ]
+}
