@@ -1,5 +1,5 @@
+import React from 'react';
 import styled from 'styled-components';
-
 function Challenges({ title, cost, rest, total, image, onClick }) {
   return (
     <ChallengesWrapper

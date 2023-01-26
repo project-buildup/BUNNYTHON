@@ -1,10 +1,10 @@
+import React from 'react';
 import styled from 'styled-components';
 
 import AdBanner from '../AdBanner';
 import ChallengeBanner from '../ChallengeBanner';
 import Saving from '../Saving';
 import SavingButton from '../SavingButton';
-
 function MainBody({ setIsClicked }) {
   return (
     <MainBodyWrapper>

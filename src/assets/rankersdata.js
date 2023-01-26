@@ -1,10 +1,11 @@
+import React from 'react';
+
 import hsh from './hsh.png';
 import profile1 from './profile-1.png';
 import profile2 from './profile-2.png';
 import profile3 from './profile-3.png';
 import profile4 from './profile-4.png';
 import profile5 from './profile-5.png';
-
 const rankersdata = [
   {
     img: hsh,
