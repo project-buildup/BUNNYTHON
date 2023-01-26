@@ -1,12 +1,18 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 import banksalad from '../../assets/banksalad.png';
 import kakaopay from '../../assets/kakaopay.png';
 import toss from '../../assets/toss.png';
 function SendBody() {
+  const navigate = useNavigate();
   return (
     <SendBodyWrapper>
-      <SendingButtonWrapper onClick={() => {}}>
+      <SendingButtonWrapper
+        onClick={() => {
+          navigate('/done');
+        }}
+      >
         <img
           src={toss}
           alt=""
@@ -16,9 +22,13 @@ function SendBody() {
             marginRight: '10px',
           }}
         />
-        토스에서 송금하기
+        <div>토스에서 송금하기</div>
       </SendingButtonWrapper>
-      <SendingButtonWrapper onClick={() => {}}>
+      <SendingButtonWrapper
+        onClick={() => {
+          navigate('/done');
+        }}
+      >
         <img
           src={kakaopay}
           alt=""
@@ -30,7 +40,11 @@ function SendBody() {
         />
         카카오페이에서 송금하기
       </SendingButtonWrapper>
-      <SendingButtonWrapper onClick={() => {}}>
+      <SendingButtonWrapper
+        onClick={() => {
+          navigate('/done');
+        }}
+      >
         <img
           src={banksalad}
           alt=""
@@ -42,7 +56,11 @@ function SendBody() {
         />
         뱅크샐러드에서 송금하기
       </SendingButtonWrapper>
-      <SendingButtonWrapper onClick={() => {}}>
+      <SendingButtonWrapper
+        onClick={() => {
+          navigate('/done');
+        }}
+      >
         은행앱에서 송금하기
       </SendingButtonWrapper>
     </SendBodyWrapper>
