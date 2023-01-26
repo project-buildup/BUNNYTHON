@@ -23,6 +23,7 @@ function SavingButton() {
             image={challenge}
             onClick={() => {
               navigate('/send');
+              window.scrollTo(0, 0);
             }}
           />
           <Challenges
