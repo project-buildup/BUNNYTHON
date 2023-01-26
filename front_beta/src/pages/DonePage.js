@@ -2,19 +2,19 @@ import styled from 'styled-components';
 
 import Alarm from '../components/Alarm';
 import BottomBanner from '../components/BottomBanner';
+import DoneBody from '../components/DoneBody';
 import Logo from '../components/Logo';
-import MainBody from '../components/MainBody';
 
-function MainPage() {
+function DonePage() {
   return (
-    <MainPageWrapper>
+    <DonePageWrapper>
       <TopBannerWrapper>
         <Logo />
         <Alarm />
       </TopBannerWrapper>
-      <MainBody />
+      <DoneBody />
       <BottomBanner />
-    </MainPageWrapper>
+    </DonePageWrapper>
   );
 }
 const TopBannerWrapper = styled.div`
@@ -22,10 +22,10 @@ const TopBannerWrapper = styled.div`
   display: inline-flex;
 `;
 
-const MainPageWrapper = styled.div`
+const DonePageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
 `;
 
-export default MainPage;
+export default DonePage;

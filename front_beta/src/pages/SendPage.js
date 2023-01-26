@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import Alarm from '../components/Alarm';
 import BottomBanner from '../components/BottomBanner';
 import Logo from '../components/Logo';
-import MainBody from '../components/MainBody';
+import SendBody from '../components/SendBody';
 
-function MainPage() {
+function SendPage() {
   return (
     <MainPageWrapper>
       <TopBannerWrapper>
         <Logo />
         <Alarm />
       </TopBannerWrapper>
-      <MainBody />
+      <SendBody />
       <BottomBanner />
     </MainPageWrapper>
   );
@@ -28,4 +28,4 @@ const MainPageWrapper = styled.div`
   width: 100%;
 `;
 
-export default MainPage;
+export default SendPage;

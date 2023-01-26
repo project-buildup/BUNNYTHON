@@ -5,13 +5,13 @@ import ChallengeBanner from '../ChallengeBanner';
 import Saving from '../Saving';
 import SavingButton from '../SavingButton';
 
-function MainBody() {
+function MainBody({ setIsClicked }) {
   return (
     <MainBodyWrapper>
       <ChallengeBanner />
       <AdBanner />
       <Saving />
-      <SavingButton />
+      <SavingButton setter={setIsClicked} />
     </MainBodyWrapper>
   );
 }
