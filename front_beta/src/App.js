@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import DonePage from './pages/DonePage';
 import MainPage from './pages/MainPage';
+import RankPage from './pages/RankPage';
 import SendPage from './pages/SendPage';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/send" element={<SendPage />} />
           <Route path="/done" element={<DonePage />} />
+          <Route path="/rank" element={<RankPage />} />
         </Routes>
       </BOX>
     </AppWrapper>
