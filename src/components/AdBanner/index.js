@@ -1,9 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+
+import ad from '../../assets/ad.png';
 function AdBanner() {
   return (
-    <AdBannerWrapper>
-      <div style={{ padding: '20px' }}>광고 예시입니다!</div>
+    <AdBannerWrapper
+      style={{
+        backgroundImage: `url(${ad})`,
+      }}
+    >
+      <div></div>
     </AdBannerWrapper>
   );
 }
@@ -17,6 +23,9 @@ const AdBannerWrapper = styled.div`
   display: inline-block;
   box-sizing: border-box;
   margin-top: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 export default AdBanner;
