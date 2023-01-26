@@ -1,35 +1,18 @@
 import styled from 'styled-components';
 
 import hsh from '../../assets/hsh.png';
+import rankersdata from '../../assets/rankersdata.js';
 import Rankers from '../Rankers';
 
 function RankBody() {
-  const rankers = [
-    {
-      img: hsh,
-      rank: 5,
-      nickname: '가보자고',
-      account: 18900,
-    },
-    {
-      img: hsh,
-      rank: 6,
-      nickname: 'Woo0W',
-      account: 17000,
-    },
-    {
-      img: hsh,
-      rank: 7,
-      nickname: '나',
-      account: 14200,
-    },
-    {
-      img: hsh,
-      rank: 8,
-      nickname: '너',
-      account: 12000,
-    },
-  ];
+  const rankersData = rankersdata;
+  let myrank = 1;
+
+  rankersData.map((i) => {
+    if (i.nickname === '나') {
+      myrank = i.rank;
+    }
+  });
 
   return (
     <RankBodyWrapper>
@@ -97,15 +80,18 @@ function RankBody() {
         </div>
       </RankingWrapper>
       <MyRank>나의 순위</MyRank>
-      {rankers.map((ranker) => (
-        <Rankers
-          key={ranker.rank}
-          img={ranker.img}
-          rank={ranker.rank}
-          nickname={ranker.nickname}
-          account={ranker.account}
-        />
-      ))}
+      {rankersData.map(
+        (ranker) =>
+          Math.abs(ranker.rank - myrank) < 3 && (
+            <Rankers
+              key={ranker.rank}
+              img={ranker.img}
+              rank={ranker.rank}
+              nickname={ranker.nickname}
+              account={ranker.account}
+            />
+          ),
+      )}
     </RankBodyWrapper>
   );
 }
