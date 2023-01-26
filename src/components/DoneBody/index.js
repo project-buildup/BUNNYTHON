@@ -45,7 +45,7 @@ function DoneBody() {
           }}
         />
       </SendingButtonWrapper>
-      <SendingButtonWrapper onClick={() => {}}>
+      <SendingButtonWrapper>
         <div style={{ marginLeft: '25px' }}>가치 소비 추천</div>
         <img
           src={rightarrow}
@@ -58,7 +58,7 @@ function DoneBody() {
           }}
         />
       </SendingButtonWrapper>
-      <SendingButtonWrapper onClick={() => {}}>
+      <SendingButtonWrapper>
         <div style={{ marginLeft: '25px' }}>절약 현황 확인하기</div>
         <img
           src={rightarrow}

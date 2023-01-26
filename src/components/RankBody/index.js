@@ -26,7 +26,7 @@ function RankBody() {
     {
       img: hsh,
       rank: 8,
-      nickname: '나',
+      nickname: '너',
       account: 12000,
     },
   ];

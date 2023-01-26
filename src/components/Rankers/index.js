@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 function Rankers({ img, rank, nickname, account }) {
+  const isMe = nickname === '나' ? true : false;
   return (
-    <RankersWrapper>
+    <RankersWrapper isMe={isMe}>
       <div
         style={{
           marginLeft: '20px',
@@ -72,7 +73,7 @@ const RankersWrapper = styled.div`
   width: 333px;
   height: 62px;
   border-radius: 16px;
-  background: #f6f7fa;
+  background: ${({ isMe }) => (isMe ? '#1182FA' : '#f6f7fa')};
   color: #535353;
   box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.5);
   border-radius: 12px;
