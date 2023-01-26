@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 import Alarm from '../components/Alarm';
 import BottomBanner from '../components/BottomBanner';
-import DoneBody from '../components/DoneBody';
 import Logo from '../components/Logo';
+import RankBody from '../components/RankBody';
 
 function RankPage() {
   return (
@@ -12,8 +12,8 @@ function RankPage() {
         <Logo />
         <Alarm />
       </TopBannerWrapper>
-      <DoneBody />
       <BottomBanner />
+      <RankBody />
     </RankPageWrapper>
   );
 }

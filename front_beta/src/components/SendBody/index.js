@@ -11,6 +11,7 @@ function SendBody() {
       <SendingButtonWrapper
         onClick={() => {
           navigate('/done');
+          window.scrollTo(0, 0);
         }}
       >
         <img
@@ -27,6 +28,7 @@ function SendBody() {
       <SendingButtonWrapper
         onClick={() => {
           navigate('/done');
+          window.scrollTo(0, 0);
         }}
       >
         <img
@@ -43,6 +45,7 @@ function SendBody() {
       <SendingButtonWrapper
         onClick={() => {
           navigate('/done');
+          window.scrollTo(0, 0);
         }}
       >
         <img
@@ -59,6 +62,7 @@ function SendBody() {
       <SendingButtonWrapper
         onClick={() => {
           navigate('/done');
+          window.scrollTo(0, 0);
         }}
       >
         은행앱에서 송금하기

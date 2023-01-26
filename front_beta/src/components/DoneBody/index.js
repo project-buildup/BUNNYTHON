@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 import checkicon from '../../assets/checkicon.png';
 import rightarrow from '../../assets/rightarrow.png';
 function DoneBody() {
+  const navigate = useNavigate();
   return (
     <DoneBodyWrapper>
       <img
@@ -25,7 +27,12 @@ function DoneBody() {
       >
         송금이 완료되었습니다!
       </div>
-      <SendingButtonWrapper onClick={() => {}}>
+      <SendingButtonWrapper
+        onClick={() => {
+          navigate('/rank');
+          window.scrollTo(0, 0);
+        }}
+      >
         <div style={{ marginLeft: '25px' }}>랭킹 확인하기</div>
         <img
           src={rightarrow}
