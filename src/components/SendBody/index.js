@@ -11,7 +11,7 @@ function SendBody() {
     <SendBodyWrapper>
       <SendingButtonWrapper
         onClick={() => {
-          navigate('/done');
+          navigate('/account');
           window.scrollTo(0, 0);
         }}
       >
@@ -28,7 +28,7 @@ function SendBody() {
       </SendingButtonWrapper>
       <SendingButtonWrapper
         onClick={() => {
-          navigate('/done');
+          navigate('/account');
           window.scrollTo(0, 0);
         }}
       >
@@ -45,7 +45,7 @@ function SendBody() {
       </SendingButtonWrapper>
       <SendingButtonWrapper
         onClick={() => {
-          navigate('/done');
+          navigate('/account');
           window.scrollTo(0, 0);
         }}
       >
@@ -62,7 +62,7 @@ function SendBody() {
       </SendingButtonWrapper>
       <SendingButtonWrapper
         onClick={() => {
-          navigate('/done');
+          navigate('/account');
           window.scrollTo(0, 0);
         }}
       >

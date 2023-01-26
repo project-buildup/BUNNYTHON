@@ -28,21 +28,21 @@ const rankersdata = [
     img: profile2,
     rank: 8,
     nickname: 'User03',
-    account: 50000,
+    account: 51000,
   },
 
   {
     img: profile3,
     rank: 9,
     nickname: '나',
-    account: 48600,
+    account: 43600,
   },
 
   {
     img: profile4,
     rank: 10,
     nickname: 'User04',
-    account: 45500,
+    account: 41500,
   },
 
   {

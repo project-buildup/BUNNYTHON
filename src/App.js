@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 
+import AccountPage from './pages/AccountPage';
 import DonePage from './pages/DonePage';
 import MainPage from './pages/MainPage';
 import RankPage from './pages/RankPage';
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/send" element={<SendPage />} />
+          <Route path="/account" element={<AccountPage />} />
           <Route path="/done" element={<DonePage />} />
           <Route path="/rank" element={<RankPage />} />
         </Routes>

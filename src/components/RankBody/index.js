@@ -12,6 +12,9 @@ function RankBody() {
   rankersData.map((i) => {
     if (i.nickname === '나') {
       myrank = i.rank;
+      i.account = parseInt(sessionStorage.getItem('money') || i.account);
+
+      console.log(i.account);
     }
   });
 
