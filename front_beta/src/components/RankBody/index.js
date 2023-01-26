@@ -1,13 +1,9 @@
-import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
-import banksalad from '../../assets/banksalad.png';
 import hsh from '../../assets/hsh.png';
-import kakaopay from '../../assets/kakaopay.png';
 import Rankers from '../Rankers';
 
 function RankBody() {
-  const navigate = useNavigate();
   const rankers = [
     {
       img: hsh,
